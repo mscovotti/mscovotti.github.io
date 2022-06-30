@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelo Scovotti - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./fontawesome-6/css/all.css">
+  <style>
+    body {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: stretch;
+      margin: 0;
+      background-color: white;
+      font-family: 'Montserrat', sans-serif;
+      width: 976px;
+    }
+    heading {
+      position: absolute;
+      top: 2.5rem;
+      padding: 1.5rem;
+      border: 2px solid black;
+      background-color: white;
+      left:0;
+      right:0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      text-align: center;
+    }
+    heading name {
+      display: block;
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: .3rem;
+    }
+    heading job-title {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: .15rem;
+    }
+    aside {
+      background-color: #eee;
+      /* flex-grow: 1; */
+      padding: 11rem 1rem 1rem 1rem;
+      min-width: 18%;
+    }
+    main {
+      /* flex-grow: 1; */
+      padding: 11rem 1rem 1rem 1rem;
+    }
+    article {
+      margin-top: 1.5rem;
+    }
+    article title {
+      display: block;
+      text-transform: uppercase;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid black;
+      font-weight: bolder;
+      letter-spacing: .3rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    dl {
+      margin: 0;
+    }
+    dl.elem dt {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: stretch;
+      text-transform: none;
+      font-size: 1rem;
+    }
+    dl.elem dt .title {
+      flex-grow: 1;
+      letter-spacing: .04rem;
+    }
+    dl.elem dt .location {
+      font-size: .8rem;
+      letter-spacing: .15rem;
+      font-weight: 400;
+      color: darkgrey;
+      text-align: right;
+    }
+    dl.elem dd.period {
+      font-size: .8rem;
+      letter-spacing: .4rem;
+      color: darkgrey;
+    }
+    dl dt {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      font-weight: bolder;
+      margin-top: 1rem;
+    }
+    dl dd {
+      margin: 0;
+    }
+    .tags-list {
+      list-style: none;
+      margin: 8px 0 0 0;
+      padding: 0;
+      font-size: .8rem;
+    }
+    .tags-list li {
+      background-color: #ddd;
+      border: 1px solid black;
+      border-radius: .1rem;
+      padding: 1px  3px;
+      line-height: 1.4rem;
+      display: inline;
+      margin: 0 3px 0 0;
+    }
+    .tags-list.light li {
+      background-color: #f8f8f8;
+    }
+    .rating {
+      letter-spacing: .2rem;
+      font-size: .8rem;
+      margin: .2rem 0 .5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <article>
+      <title>Details</title>
+      <dl>
+        <dt>Phone</dt>
+        <dd>+54 11 3783 6568</dd>
+        <dt>Email</dt>
+        <dd>mscovotti@gmail.com</dd>
+        <dt>Nationality</dt>
+        <dd>Argentinian</dd>
+      </dl>
+    </article>
+
+    <article>
+      <title>Skills</title>
+      <ul class="tags-list">
+        <li>JavaScript / TypeScript</li>
+        <li>Node.js</li>
+        <li>PHP</li>
+        <li>.NET / C#</li>
+        <li>Ruby On Rails</li>
+      </ul>
+      <ul class="tags-list">
+        <li>HTML / CSS</li>
+        <li>Angular</li>
+        <li>React</li>
+        <li>VueJS</li>
+        <li>jQuery</li>
+      </ul>
+      <ul class="tags-list">
+        <li>SQL</li>
+        <li>NoSQL</li>
+      </ul>
+      <ul class="tags-list">
+        <li>REST</li>
+        <li>GraphQL</li>
+        <li>SOAP</li>
+      </ul>
+      <ul class="tags-list">
+        <li>AWS</li>
+        <li>Firebase</li>
+        <li>Apache</li>
+        <li>Linux</li>
+      </ul>
+      <ul class="tags-list">
+        <li>Git</li>
+        <li>CI / CD</li>
+        <li>TDD</li>
+      </ul>
+      <ul class="tags-list">
+        <li>Scrum</li>
+        <li>Kanban</li>
+      </ul>
+    </article>
+
+    <article>
+      <title>Languages</title>
+      <div>Spanish</div>
+      <div class="rating"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></div>
+      <div>English</div>
+      <div class="rating"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="far fa-circle"></i></div>
+      <div>Portuguese</div>
+      <div class="rating"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-half-stroke"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></div>
+    </article>
+    
+    <article>
+      <title>Others</title>
+      <dl>
+        <dt>Spanish Nationality and Passport</dt>
+        <dt>Colombian residency</dt>
+      </dl>
+    </article>
+  </aside>
+
+  <main>
+    <article>
+      <title>Profile</title>
+      <p>
+        Experienced software developer passionate about designing, building, and testing software systems. 
+        Proficient in various languages and frameworks. Able to effectively self-manage on independent projects and collaborate with others as part of a team.
+        Easy-going, honest, and with a dynamic approach to work and getting things done.
+        <br/>
+        I’m looking for a challenging position in a company that would allow me to continue developing my soft and technical skills and be part of a team 
+        with people from different cultures and areas.
+      </p>
+    </article>
+
+    <article>
+      <title>Employment History</title>
+      <dl class="elem">
+        <dt><span class="title">Senior Full-Stack Developer, Verblio</span><span class="location">Remote</span></dt>
+        <dd class="period">Jun 2021 &mdash; Apr 2022</dd>
+        <dd>I Was part of the internal development team and led the technical analysis and development of the new pricing model for the company.</dd>
+        <ul class="tags-list light">
+          <li>TypeScript / Angular</li>
+          <li>GraphQL</li>
+          <li>Ruby On Rails</li>
+          <li>PostgreSQL</li>
+          <li>TDD</li>
+          <li>Git CI / CD</li>
+          <li>Scrum</li>
+        </ul>
+
+        <dt><span class="title">Senior Full-Stack Developer, SOUTHWORKS</span><span class="location">Remote</span></dt>
+        <dd class="period">Dec 2020 &mdash; May 2021</dd>
+        <dd>
+          I Was part of a development team working on a staff augmentation model for Microsoft (USA). 
+          During that time, we built websites for online events and configured the infrastructure needed and CI / CD pipelines in Azure.
+        </dd>
+        <ul class="tags-list light">
+          <li>TypeScript / React</li>
+          <li>Rest API</li>
+          <li>.NET / C#</li>
+          <li>SQLServer</li>
+          <li>Azure</li>
+          <li>TDD</li>
+          <li>Git CI / CD</li>
+          <li>Scrum</li>
+        </ul>
+
+        <dt><span class="title">Co-Founder / Product Manager / Senior Full-Stack Developer, Saise</span><span class="location">Bogotá</span></dt>
+        <dd class="period">Mar 2017 &mdash; Mar 2022</dd>
+        <dd>
+          As the technical co-founder, I was in charge of the whole lifecycle of the product, from defining the roadmap to the development, maintenance, and support. <br/>
+          I created a web app that shows different reports about time worked by employees based on data extracted from biometrical devices. 
+          The communication between the web app and the devices is handled by a Windows service created in .NET that connects to the web app through a Rest API and push messages. 
+        </dd>
+        <ul class="tags-list light">
+          <li>JavaScript / VueJS</li>
+          <li>Rest API</li>
+          <li>Laravel / PHP</li>
+          <li>.NET / C#</li>
+          <li>MySQL</li>
+          <li>AWS / EC2</li>
+          <li>Git CI / CD</li>
+        </ul>
+
+        <dt><span class="title">Partner / Product Manager / Senior Full-Stack Developer, Nails Chic</span><span class="location">Bogotá</span></dt>
+        <dd class="period">Dec 2017 &mdash; Dec 2019</dd>
+        <dd>
+          "Bel" was a mobile app for contracting beauty services. As the technical partner, I built the whole platform, which consisted of a mobile app for customers, another for providers, 
+          and a web app for administrators.
+          During that project, we also participated in an acceleration program in which we learned about marketing.
+        </dd>
+        <ul class="tags-list light">
+          <li>TypeScript / Angular / NativeScript</li>
+          <li>Rest API</li>
+          <li>Google Firebase / NodeJS</li>
+          <li>Realtime Database</li>
+        </ul>
+        <ul class="tags-list light">
+            <li>Payment gateway (PayU)</li>
+          <li>Git</li>
+        </ul>
+
+        <dt><span class="title">Senior Back-end Developer , I am Studio</span><span class="location">Bogotá</span></dt>
+        <dd class="period">Jul 2016 &mdash; Dec 2017</dd>
+        <dd>
+          I was part of the development team of Property Radar, a US-based company. 
+          I worked on adding functionality and unit tests to the Rest API. I also created a modified version of the Silex framework to handle routing in the API.
+        </dd>
+        <ul class="tags-list light">
+          <li>Rest API</li>
+          <li>Silex / PHP</li>
+          <li>MySQL</li>
+          <li>TDD</li>
+          <li>Git</li>
+          <li>Scrum</li>
+        </ul>
+
+        <dt><span class="title">Co-Founder / Product Manager / Senior Developer, WhileInn.com</span><span class="location">Bogotá</span></dt>
+        <dd class="period">Dec 2015 &mdash; Jul 2016</dd>
+        <dd>
+          As the technical founder, I was in charge of designing and building the company's products. 
+          It consisted of two web applications: one for the customers to book rooms and meeting rooms and the other for the hotels to handle their offers and bookings.
+          This time, I had to integrate the website with a payment gateway to handle credit card payments.
+        </dd>
+        <ul class="tags-list light">
+          <li>HTML / CSS</li>
+          <li>JavaScript / jQuery / Ajax</li>
+          <li>Laravel / PHP</li>
+          <li>MySQL</li>
+          <li>Payment gateway (TPaga)</li>
+        </ul>
+
+        <dt><span class="title">Programming Instructor / Academic Director, SECTORTIC</span><span class="location">Bogotá</span></dt>
+        <dd class="period">Sep 2015 &mdash; Jul 2016</dd>
+        <dd>
+          SECTORTIC's objective was to train non-programmers to become web developers in 6 months. 
+          I was responsible for designing the syllabus, teaching PHP, MySQL, and JavaScript, and mentoring other teachers.
+        </dd>
+        <ul class="tags-list light">
+          <li>HTML / CSS</li>
+          <li>JavaScript / jQuery / Ajax</li>
+          <li>Code Igniter / PHP</li>
+          <li>MySQL</li>
+        </ul>
+
+        <dt><span class="title">IT Consultant / Senior Full-Stack Developer, Independent</span><span class="location">Buenos Aires</span></dt>
+        <dd class="period">Jan 2015 &mdash; Jul 2016</dd>
+        <dd>During this time, I worked as an independent consultant analyzing, proposing, and building greenfield web applications for processing orders.</dd>
+        <ul class="tags-list light">
+          <li>HTML / CSS</li>
+          <li>JavaScript / jQuery / Ajax</li>
+          <li>Laravel / PHP</li>
+          <li>MySQL</li>
+        </ul>
+
+        <dt><span class="title">Senior Full-Stack Developer / Product Manager, Intraway</span><span class="location">Buenos Aires</span></dt>
+        <dd class="period">Aug 2011 &mdash; Jan 2015</dd>
+        <dd>
+          Intraway Corporation is a leading provider of OSS (Operation Support Systems) for Telecommunications Operators. <br/>
+          Starting as a web apps developer, I quickly became the Product Manager for the TV Business Unit. 
+          As such, I was responsible for understanding our clients' needs, writing tailored proposals, defining the roadmap for our platform, 
+          doing the functional analysis, and negotiating and coordinating the developments and implementations with the corresponding teams. 
+        </dd>
+        <ul class="tags-list light">
+          <li>HTML / CSS</li>
+          <li>JavaScript / jQuery / Ajax</li>
+          <li>SOAP</li>
+          <li>PHP</li>
+          <li>Oracle</li>
+          <li>TDD / BDD</li>
+          <li>Product Management</li>
+          <li>Kanban</li>
+        </ul>
+
+        <dt><span class="title">Senior Full-Stack Developer, Globant</span><span class="location">Buenos Aires</span></dt>
+        <dd class="period">Oct 2010 &mdash; Aug 2011</dd>
+        <dd>
+          I built commercial websites using Drupal and WordPress and participated in the creation of Disney's web application for buying tickets online. 
+          During that project, I started working with TDD and Scrum.
+        </dd>
+        <ul class="tags-list light">
+          <li>HTML / CSS</li>
+          <li>JavaScript / jQuery / Ajax</li>
+          <li>PHP</li>
+          <li>Drupal / Wordpress / Zend Framework</li>
+          <li>Oracle</li>
+          <li>TDD</li>
+          <li>Scrum</li>
+        </ul>
+
+        <dt><span class="title">IT Consultant / Senior Full-Stack Developer, Independent</span><span class="location">Buenos Aires</span></dt>
+        <dd class="period">Apr 2009 &mdash; Oct 2010</dd>
+        <dd>I worked as a functional analyst and full-stack developer, designing and creating web applications for different customers.</dd>
+        <ul class="tags-list light">
+          <li>HTML / CSS</li>
+          <li>JavaScript / jQuery / Ajax</li>
+          <li>MVC / Yii / PHP</li>
+          <li>Rest API</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+        </ul>
+
+        <dt><span class="title">Senior Full-Stack Developer / Tech Lead, Accenture</span><span class="location">Buenos Aires</span></dt>
+        <dd class="period">Aug 2002 &mdash; Mar 2009</dd>
+        <dd>
+          I participated in different teams and projects where we created web applications to interact with SAP. <br/>
+          I had roles like full-stack developer, technical analyst, and team leader. 
+          Sometimes, I worked directly for the clients' stakeholders designing and implementing the best solutions for them.
+        </dd>
+        <ul class="tags-list light">
+          <li>HTML / CSS</li>
+          <li>JavaScript / jQuery / Ajax</li>
+          <li>ASP</li>
+          <li>Oracle / PL-SQL</li>
+          <li>RUP</li>
+        </ul>
+
+        <dt><span class="title">PHP Trainer, Independent</span><span class="location">Buenos Aires</span></dt>
+        <dd class="period">Jun 2000 &mdash; Aug 2000</dd>
+        <dd>During this term, I trained a development team in PHP and MySQL. I also created the syllabus of the course based on the client's needs.</dd>
+        <ul class="tags-list light">
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+
+        <dt><span class="title">Senior Full-Stack Developer / Project Manager, Salutia.com</span><span class="location">Buenos Aires</span></dt>
+        <dd class="period">Nov 1999 &mdash; Jun 2002</dd>
+        <dd>
+          I started working for the internal development team as a junior programmer building the company's website, a CRM, and other web applications. <br/>
+          Quickly I became a senior and led a small development team and projects for external clients.
+        </dd>
+        <ul class="tags-list light">
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>Apache</li>
+        </ul>
+
+        <dt><span class="title">Course assistant, University of Buenos Aires</span><span class="location">Buenos Aires</span></dt>
+        <dd class="period">Mar 1999 &mdash; Dec 1999</dd>
+        <dd>During two terms, I teach "Computing" for Engineering careers and was an assistant on "Computer Organization" (CPU Logic) for BA in Systems Analysis.</dd>
+        <ul class="tags-list light">
+          <li>Pascal</li>
+        </ul>
+      </dl>
+    </article>
+
+    <article>
+      <title>Education</title>
+      <dl class="elem">
+        <dt><span class="title">Universidad de Buenos Aires, BA in Systems Analysis</span><span class="location">Buenos Aires</span></dt>
+        <dt><span class="title">PIO IX High School, Electronics technician</span><span class="location">Buenos Aires</span></dt>
+      </dl>
+    </article>
+
+  </main>
+  <heading>
+    <name>Marcelo Scovotti</name>
+    <job-title>Senior Full-Stack Developer</job-title>
+  </heading>
+
+</body>
+</html>
